@@ -2,35 +2,35 @@ program HOTEL;
 var
 
   repe, suce: Integer;
-  total: Real;
-  bandera:boolean;
+  sumatot: Real;
+  hab:boolean;
   begin
      
-     Write ('Cuantos dias quiere ir:');
+     Write ('Cuantos dias se hospedará:');
      readln(repe);
-     total:= 0;
-     bandera:=true;
+     sumatot:= 0;
+     hab:=true;
      suce:=1;
      while repe >= 1 do
      begin	
         Write ('El dia ');
         Write (suce);
         Write (' pagara ');
-        if (bandera=true) then
+        if (hab=true) then
         begin
         writeln('1200');
-        total := total +1200;
+        sumatot := sumatot +1200;
         end
         else
          
          writeln('950');
-         total := total +950;
+         sumatot := sumatot +950;
          
         
         repe:= repe-1;
         suce:=suce+1;
-        bandera:=false;
+        hab:=false;
      end;
-     Write ('Por lo que el total es: ');
-     writeln(total);
+     Write ('El total es: ');
+     writeln(sumatot);
 end.
