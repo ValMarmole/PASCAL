@@ -1,0 +1,9 @@
+Algoritmo hotel
+	Definir incremento,primerDia,suma,pagoTotal Como Entero
+	Escribir 'Cuantos dias se va a hospedar?'
+	Leer suma;
+	primerDia=1200;
+	incremento=950*suma;
+	pagoTotal= primerDia+incremento-950;
+	Escribir 'El pago total es de:',pagoTotal;
+FinAlgoritmo
